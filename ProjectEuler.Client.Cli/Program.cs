@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using CliFx;
-using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
 using ProjectEuler.Client;
 using System.Collections.Generic;
