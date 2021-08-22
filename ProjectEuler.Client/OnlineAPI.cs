@@ -10,7 +10,7 @@ namespace ProjectEuler.Client
     /// <summary>
     /// Retrieves Project Euler HTML pages from the https://projecteuler.net/ web site
     /// </summary>
-    public class OnlineProblemProvider : IProjectEulerProblemProvider
+    public class OnlineAPI : IProjectEulerAPI
     {
         public const string PROJECT_EULER_URL = "https://projecteuler.net/";
         public Uri ProlemUrlPattern => new (ProjectEulerUri, "/problem={0}");
@@ -22,11 +22,12 @@ namespace ProjectEuler.Client
         /// <summary>
         /// Construct project euler problem provider. By default reads problem files from PROJECT_EULER_API.
         /// </summary>
-        public OnlineProblemProvider(HttpClient httpClient, string projectEulerUri = PROJECT_EULER_URL)
+        public OnlineAPI(HttpClient httpClient, string projectEulerUri = PROJECT_EULER_URL)
         {
             _httpClient = httpClient;
             _projectEulerUrl = projectEulerUri;
         }
+
         public async Task<ProblemDetails> ProblemDetailsFor(int problemNumber) 
         {
             var problemUrl = String.Format(ProlemUrlPattern.ToString(), problemNumber);
@@ -34,10 +35,9 @@ namespace ProjectEuler.Client
 
             var document = new HtmlDocument();
             document.LoadHtml(problemHtml);
-            string title = ParseProblemTitle(document);
-            string detailsHtml = ParseDetailsHtml(document);
-
-            return new ProblemDetails(problemNumber, title, detailsHtml);
+            var title = ParseProblemTitle(document);
+            var details = ParseDetailsHtml(document);
+            return new ProblemDetails(problemUrl, problemNumber, title, details);
         }
 
         private static string ParseProblemTitle(HtmlDocument document)

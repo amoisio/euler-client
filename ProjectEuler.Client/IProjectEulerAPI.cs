@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 namespace ProjectEuler.Client
 {
     /// <summary>
-    /// Provides methods for retrieving project euler html pages
+    /// Provides methods for interacting with the project euler.
     /// </summary>
-    public interface IProjectEulerProblemProvider
+    public interface IProjectEulerAPI
     {
         Task<ProblemDetails> ProblemDetailsFor(int problemNumber);
     }
