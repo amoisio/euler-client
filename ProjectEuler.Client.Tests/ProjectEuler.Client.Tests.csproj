@@ -16,4 +16,13 @@
     <ProjectReference Include="..\ProjectEuler.Client\ProjectEuler.Client.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Template.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Help.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
