@@ -15,9 +15,6 @@ namespace ProjectEuler.Client.Cli
             int problemNumber = ParseProblemNumber(args);
             var details = await api.ProblemDetailsFor(problemNumber);
 
-            System.Console.WriteLine(details.Title);
-            System.Console.WriteLine(details.DetailsHtml);
-
             var gen = new ProblemFileGenerator(details);
             foreach (var (templatePath, outputPath) in ParseTemplatePaths(args)) 
             {
