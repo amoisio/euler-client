@@ -11,9 +11,8 @@ namespace ProjectEuler.Client.Cli
         static readonly HttpClient _httpClient = new HttpClient();
         static async Task<int> Main(string[] args)
         {
-            int problemNumber = ParseProblemNumber(args);
-            
             var api = new OnlineAPI(_httpClient);
+            int problemNumber = ParseProblemNumber(args);
             var details = await api.ProblemDetailsFor(problemNumber);
 
             System.Console.WriteLine(details.Title);

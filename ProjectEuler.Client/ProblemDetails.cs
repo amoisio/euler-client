@@ -7,7 +7,7 @@ namespace ProjectEuler.Client
     /// </summary>
     public class ProblemDetails
     {
-        public ProblemDetails(string fileRef, int number, string title, string detailsHtml)
+        internal ProblemDetails(string fileRef, int number, string title, string detailsHtml)
         {
             Ref = fileRef;
             Number = number;
