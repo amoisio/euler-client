@@ -18,7 +18,6 @@
     <Copyright>Copyright (c) 2021 Aleksi Moisio</Copyright> 
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>Project Euler;.NET;CLI</PackageTags>
-
   </PropertyGroup>
 
   <Target Name="Rename" AfterTargets="AfterBuild">
