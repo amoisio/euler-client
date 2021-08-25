@@ -1,0 +1,14 @@
+<Project>
+    <PropertyGroup>
+        <Title>Proejct Euler CLI</Title>
+        <Product>Proejct Euler CLI</Product>
+        <Version>1.1.0</Version>
+        <FileVersion>1.1.0</FileVersion>
+        <AssemblyVersion>1.1.0</AssemblyVersion>
+        <Authors>Aleksi Moisio</Authors>
+        <Company>-</Company>
+        <Copyright>Copyright (c) 2021 Aleksi Moisio</Copyright> 
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>Project Euler;.NET;CLI</PackageTags>
+    </PropertyGroup>
+</Project>
