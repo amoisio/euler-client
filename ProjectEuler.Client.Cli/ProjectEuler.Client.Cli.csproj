@@ -10,9 +10,9 @@
     <RootNamespace>ProjectEuler.Client.Cli</RootNamespace>
   </PropertyGroup>
 
-  <Target Name="Rename" AfterTargets="AfterBuild">
-    <Move SourceFiles="$(OUTDIR)\ProjectEuler.Client.Cli" DestinationFiles="$(OUTDIR)\euler" />
-    <Message Text="Renamed executable file." Importance="high" />
+  <Target Name="Rename" AfterTargets="Publish">
+    <Move SourceFiles="$(PublishDir)\ProjectEuler.Client.Cli" DestinationFiles="$(PublishDir)\euler" />
+    <Message Text="Renamed executable file in $(PublishDir)." Importance="high" />
   </Target>
 
 </Project>
