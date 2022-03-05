@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/ProjectEuler.Client.Tests/bin/Debug/net5.0/ProjectEuler.Client.Tests.dll",
+            "program": "${workspaceFolder}/ProjectEuler.Cli/bin/Debug/net5.0/ProjectEuler.Cli.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/ProjectEuler.Client.Tests",
+            "cwd": "${workspaceFolder}/ProjectEuler.Tests",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

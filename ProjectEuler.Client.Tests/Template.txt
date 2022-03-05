@@ -1,4 +1,0 @@
-Hello {{ title }} 
-Problem {{ # }}
-{{ details }}
-Ref {{ ref }}

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/ProjectEuler.Client.Tests/ProjectEuler.Client.Tests.csproj",
+                "${workspaceFolder}/ProjectEuler.Tests/ProjectEuler.Tests.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "test",
-                "${workspaceFolder}/ProjectEuler.Client.Tests/ProjectEuler.Client.Tests.csproj",
+                "${workspaceFolder}/ProjectEuler.Tests/ProjectEuler.Tests.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -31,7 +31,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/ProjectEuler.Client.Tests/ProjectEuler.Client.Tests.csproj",
+                "${workspaceFolder}/ProjectEuler.Tests/ProjectEuler.Tests.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -44,7 +44,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/ProjectEuler.Client.Tests/ProjectEuler.Client.Tests.csproj",
+                "${workspaceFolder}/ProjectEuler.Tests/ProjectEuler.Tests.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

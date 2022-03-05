@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectEuler.Implementation\ProjectEuler.Implementation.csproj" />
+    <ProjectReference Include="..\ProjectEuler.Api\ProjectEuler.Api.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>ProjectEuler.Client.Cli</RootNamespace>
+  </PropertyGroup>
+
+  <Target Name="Rename" AfterTargets="Publish">
+    <Move SourceFiles="$(PublishDir)\ProjectEuler.Cli" DestinationFiles="$(PublishDir)\euler" />
+    <Message Text="Renamed executable file in $(PublishDir)." Importance="high" />
+  </Target>
+
+  <ItemGroup>
+    <None Update="template.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

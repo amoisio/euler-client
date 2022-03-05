@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.16" />
+    <ProjectReference Include="..\ProjectEuler.Api\ProjectEuler.Api.csproj" />
   </ItemGroup>
 
 </Project>

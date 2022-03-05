@@ -12,13 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProjectEuler.Client\ProjectEuler.Client.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Template.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <ProjectReference Include="..\ProjectEuler.Implementation\ProjectEuler.Implementation.csproj" />
+    <ProjectReference Include="..\ProjectEuler.Api\ProjectEuler.Api.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Client", "ProjectEuler.Client\ProjectEuler.Client.csproj", "{82B3C041-247A-42F6-BBD3-9E90C8428BDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Implementation", "ProjectEuler.Implementation\ProjectEuler.Implementation.csproj", "{82B3C041-247A-42F6-BBD3-9E90C8428BDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Client.Tests", "ProjectEuler.Client.Tests\ProjectEuler.Client.Tests.csproj", "{4F9E4ECE-1F7D-4366-9D5F-C6B30094FBDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Tests", "ProjectEuler.Tests\ProjectEuler.Tests.csproj", "{4F9E4ECE-1F7D-4366-9D5F-C6B30094FBDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Client.Cli", "ProjectEuler.Client.Cli\ProjectEuler.Client.Cli.csproj", "{B74F2664-57C5-4BDE-B1EC-05B9B3ADF30F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Cli", "ProjectEuler.Cli\ProjectEuler.Cli.csproj", "{B74F2664-57C5-4BDE-B1EC-05B9B3ADF30F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Api", "ProjectEuler.Api\ProjectEuler.Api.csproj", "{10DDC04F-925E-432F-A0D8-D96E23EA96D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,5 +60,17 @@ Global
 		{B74F2664-57C5-4BDE-B1EC-05B9B3ADF30F}.Release|x64.Build.0 = Release|Any CPU
 		{B74F2664-57C5-4BDE-B1EC-05B9B3ADF30F}.Release|x86.ActiveCfg = Release|Any CPU
 		{B74F2664-57C5-4BDE-B1EC-05B9B3ADF30F}.Release|x86.Build.0 = Release|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Debug|x64.Build.0 = Debug|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Debug|x86.Build.0 = Debug|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Release|x64.ActiveCfg = Release|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Release|x64.Build.0 = Release|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Release|x86.ActiveCfg = Release|Any CPU
+		{10DDC04F-925E-432F-A0D8-D96E23EA96D4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
