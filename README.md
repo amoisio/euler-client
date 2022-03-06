@@ -16,8 +16,8 @@ $ euler <problem> -t <template> -o <output> -m <mode>
 
 where 
 * `<problem>` is the project euler problem number.
-* `<template>` is optional, and is the path to the template file. If not given, then the client will only output the problem details in the terminal.
-* `<output>` is optional, and is the path to the output file. If not given, then the client will output the template file contents merged with problem details.
+* `<template>` is optional, and is the path to the template file. If not given, then the client will output the problem details in the terminal.
+* `<output>` is optional, and is the path to the output file. If not given, then the client will output the generated file contents in the terminal.
 * `<mode>` is optional, and allows overwriting an existing output file. If not given, the application will give an error if targeting an existing output file.
 
 ## Template
