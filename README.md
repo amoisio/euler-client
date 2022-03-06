@@ -3,7 +3,7 @@
 A Project Euler web site (https://projecteuler.net/) client which allows users to generate files based on the problem details 
 and a user provided template. 
 
-As an example, the client can be used to generate a Vue single-file component which displays the number, title and full description 
+For example, the client can be used to generate a Vue single-file components which displays the number, title and full description 
 of the error and provides a placeholder for you code.
 
 ## Usage
