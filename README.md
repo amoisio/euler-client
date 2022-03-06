@@ -3,12 +3,12 @@
 A Project Euler web site (https://projecteuler.net/) client which allows users to generate files based on the problem details 
 and a user provided template. 
 
-For example, the client can be used to generate a Vue single-file components which displays the number, title and full description 
-of the error and provides a placeholder for you code.
+For example, the client can be used to generate a Vue single-file components which display the number, title and full description 
+of the problem, and provide a placeholder for you code.
 
 ## Usage
 
-The client comes with a simple cli with syntax
+The client comes with a cli with syntax
 
 ``` bash
 $ euler <problem> -t <template> -o <output> -m <mode>
